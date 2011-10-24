@@ -46,6 +46,19 @@ RVM can always be uninstalled with 'rvm implode', and remove the /etc/{rvmrc,gem
         }
     }
 
+
+# Defaults
+
+This module uses these defaults which are define at upper scope level
+
+    File {
+        owner   => 'root',
+        group   => 'root',
+        mode    => '0640',
+        backup  => main,
+    }
+
+
 # Prerequisites
 
 My RVM Puppet module requires to edit the /etc/bashrc file. For that, it uses a Filesection type, which is simply:
