@@ -1,0 +1,9 @@
+#!/bin/bash
+
+#
+# MANAGED BY PUPPET
+#
+
+test -d /usr/local/rvm || /bin/bash < <(/usr/bin/curl -sk https://rvm.beginrescueend.com/install/rvm)
+
+# rm -f $0  # delete itself... but Puppet will put it back everytime. It would be best to create a Fact to see if rvm is already installed and put this file only if needed

@@ -1,0 +1,6 @@
+#
+# MANAGED BY PUPPET
+#
+
+umask g+w
+export rvm_path="/usr/local/rvm"

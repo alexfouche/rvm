@@ -1,0 +1,5 @@
+#
+# MANAGED BY PUPPET
+#
+
+gem: --no-ri --no-rdoc
